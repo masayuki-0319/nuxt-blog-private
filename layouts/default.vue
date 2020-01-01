@@ -1,6 +1,7 @@
 <template>
   <div>
-    <nuxt />
+  <nuxt-link :to="'/'">ホーム</nuxt-link>
+  <nuxt />
   </div>
 </template>
 
