@@ -57,11 +57,11 @@ export default {
   generate: {
     routes() {
       return client
-        .getEntries({ content_type: 'post' })
+        .getEntries({ content_type: 'article' })
         .then(entries => {
           return entries.items.map(entry => {
             return {
-              route: "/posts/"+entry.fields.slug,
+              route: "/articles/"+entry.fields.id,
               payload: entry
             }
           })
