@@ -4,6 +4,9 @@ services:
     build:
       context: .
       dockerfile: ./docker/Dockerfile
+    command: yarn run dev
+    expose:
+      - "3000"
     ports:
       - 3000:3000
     volumes:
